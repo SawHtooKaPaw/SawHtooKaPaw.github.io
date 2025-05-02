@@ -20,22 +20,41 @@ header {
     background-color: #2c3e50;
     color: white;
     padding: 20px 0;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-header p {
-    margin: 5px 0 0;
-    font-size: 1.2em;
+.profile-title h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+.profile-title p {
+    margin: 10px 0 0;
+    font-size: 1.1em;
+    color: #ecf0f1;
 }
 
 /* Navigation Styles */
 nav {
     background-color: #34495e;
+    padding: 10px 0;
 }
 
 nav ul {
@@ -44,17 +63,18 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav li {
-    margin: 0;
+    margin: 5px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
-    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
     transition: background-color 0.3s;
 }
 
@@ -68,7 +88,7 @@ main {
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -80,33 +100,68 @@ h2 {
 
 h3 {
     color: #2980b9;
+    margin-top: 25px;
 }
 
 .content-box {
     background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     margin-bottom: 20px;
+}
+
+.hobby-item {
+    margin-bottom: 30px;
+}
+
+.hobby-item h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .formula {
     background-color: #f9f9f9;
     border-left: 4px solid #3498db;
     padding: 15px;
-    margin: 15px 0;
+    margin: 20px 0;
+    border-radius: 0 5px 5px 0;
 }
 
 .chemical-equation {
     background-color: #e8f4fc;
     padding: 15px;
     border-radius: 5px;
-    margin: 15px 0;
+    margin: 20px 0;
+    overflow-x: auto;
 }
 
 .chemical-equation p {
     font-family: monospace;
     font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.social-button:hover {
+    background-color: #2980b9;
 }
 
 /* Footer Styles */
@@ -115,39 +170,60 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-}
-
-.social-links {
-    margin-bottom: 15px;
-}
-
-.social-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
+    margin-top: 40px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
+    .profile-header {
         flex-direction: column;
+        gap: 20px;
     }
     
-    nav a {
-        padding: 10px;
+    .profile-title h1 {
+        font-size: 1.8em;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        width: 100%;
         text-align: center;
     }
     
-    header h1 {
-        font-size: 2em;
+    nav a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
     }
     
-    header p {
+    .content-box {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-title h1 {
+        font-size: 1.5em;
+    }
+    
+    .profile-title p {
         font-size: 1em;
     }
-}# SawHtooKaPaw.github.io
+    
+    .contact-links {
+        flex-direction: column;
+    }
+    
+    .social-button {
+        text-align: center;
+    }
+}
