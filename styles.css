@@ -1,229 +1,77 @@
-/* General Styles */
-body {
-    font-family: 'Padauk', 'Myanmar3', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f5f5f5;
+/* Active navigation link */
+nav a.active {
+    background-color: #3498db;
+    font-weight: bold;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* Header Styles */
-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px 0;
-}
-
-.profile-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    text-align: center;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #3498db;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.profile-title h1 {
-    margin: 0;
-    font-size: 2.2em;
-}
-
-.profile-title p {
-    margin: 10px 0 0;
-    font-size: 1.1em;
-    color: #ecf0f1;
-}
-
-/* Navigation Styles */
-nav {
-    background-color: #34495e;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav li {
-    margin: 5px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: #2c3e50;
-}
-
-/* Main Content Styles */
-main {
-    padding: 30px 0;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: #2980b9;
-    margin-top: 25px;
-}
-
-.content-box {
-    background-color: white;
-    border-radius: 8px;
-    padding: 25px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-}
-
-.hobby-item {
-    margin-bottom: 30px;
-}
-
-.hobby-item h3 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.formula {
-    background-color: #f9f9f9;
-    border-left: 4px solid #3498db;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 0 5px 5px 0;
-}
-
-.chemical-equation {
-    background-color: #e8f4fc;
-    padding: 15px;
-    border-radius: 5px;
-    margin: 20px 0;
-    overflow-x: auto;
-}
-
-.chemical-equation p {
-    font-family: monospace;
-    font-size: 1.1em;
-    margin: 5px 0;
-}
-
-.contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-button {
-    display: inline-block;
-    padding: 10px 20px;
     background-color: #3498db;
     color: white;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 99;
+    transition: all 0.3s;
 }
 
-.social-button:hover {
+.back-to-top:hover {
     background-color: #2980b9;
+    transform: translateY(-3px);
 }
 
-/* Footer Styles */
-footer {
-    background-color: #2c3e50;
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+    display: none;
+    background-color: #3498db;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-/* Responsive Design */
+/* Hobby item toggle */
+.hobby-item h3 {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.hobby-item h3:hover {
+    background-color: #e9ecef;
+}
+
+.hobby-item h3.active {
+    background-color: #e2e6ea;
+}
+
+/* Chemical equation highlight */
+.chemical-equation p.highlight {
+    background-color: #fffde7;
+    box-shadow: 0 0 10px rgba(255,235,59,0.5);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .profile-header {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .profile-title h1 {
-        font-size: 1.8em;
+    .mobile-menu-toggle {
+        display: block;
     }
     
     nav ul {
         flex-direction: column;
-        align-items: center;
+        display: none;
     }
     
-    nav li {
-        width: 100%;
-        text-align: center;
-    }
-    
-    nav a {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .content-box {
-        padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .profile-img {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .profile-title h1 {
-        font-size: 1.5em;
-    }
-    
-    .profile-title p {
-        font-size: 1em;
-    }
-    
-    .contact-links {
-        flex-direction: column;
-    }
-    
-    .social-button {
-        text-align: center;
+    nav ul.show {
+        display: flex;
     }
 }
