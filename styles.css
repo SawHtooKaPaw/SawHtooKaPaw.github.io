@@ -1,77 +1,229 @@
-/* Active navigation link */
-nav a.active {
-    background-color: #3498db;
-    font-weight: bold;
+/* General Styles */
+body {
+    font-family: 'Padauk', 'Myanmar3', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
 }
 
-/* Back to top button */
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    background-color: #3498db;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    z-index: 99;
-    transition: all 0.3s;
+    padding: 20px 0;
 }
 
-.back-to-top:hover {
-    background-color: #2980b9;
-    transform: translateY(-3px);
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
 }
 
-/* Mobile menu toggle */
-.mobile-menu-toggle {
-    display: none;
-    background-color: #3498db;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile-title h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+.profile-title p {
+    margin: 10px 0 0;
+    font-size: 1.1em;
+    color: #ecf0f1;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #34495e;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 5px;
+}
+
+nav a {
     color: white;
-    border: none;
+    text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
-    margin-bottom: 10px;
-    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Hobby item toggle */
+nav a:hover {
+    background-color: #2c3e50;
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2980b9;
+    margin-top: 25px;
+}
+
+.content-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.hobby-item {
+    margin-bottom: 30px;
+}
+
 .hobby-item h3 {
-    cursor: pointer;
-    padding: 10px;
-    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.formula {
+    background-color: #f9f9f9;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.chemical-equation {
+    background-color: #e8f4fc;
+    padding: 15px;
     border-radius: 5px;
-    transition: all 0.3s;
+    margin: 20px 0;
+    overflow-x: auto;
 }
 
-.hobby-item h3:hover {
-    background-color: #e9ecef;
+.chemical-equation p {
+    font-family: monospace;
+    font-size: 1.1em;
+    margin: 5px 0;
 }
 
-.hobby-item h3.active {
-    background-color: #e2e6ea;
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-/* Chemical equation highlight */
-.chemical-equation p.highlight {
-    background-color: #fffde7;
-    box-shadow: 0 0 10px rgba(255,235,59,0.5);
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-/* Responsive adjustments */
+.social-button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .mobile-menu-toggle {
-        display: block;
+    .profile-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .profile-title h1 {
+        font-size: 1.8em;
     }
     
     nav ul {
         flex-direction: column;
-        display: none;
+        align-items: center;
     }
     
-    nav ul.show {
-        display: flex;
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .content-box {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-title h1 {
+        font-size: 1.5em;
+    }
+    
+    .profile-title p {
+        font-size: 1em;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+    }
+    
+    .social-button {
+        text-align: center;
     }
 }
