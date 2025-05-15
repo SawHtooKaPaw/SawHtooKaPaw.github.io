@@ -4,118 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SawHtooKapaw - ကျောင်းသားဘဝနှင့် ဆပ်ပြာရည်ထုတ်လုပ်နည်း</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="profile-header">
-            <img src="https://lh3.googleusercontent.com/a/ACg8ocJlXm4ABUznX-BYANoUZCVkQeJ5tt62gssp1ALoT8cEpJXVCF-z=s360-c-no" alt="SawHtooKaPaw" class="profile-img">
+            <div class="profile-img-container">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJlXm4ABUznX-BYANoUZCVkQeJ5tt62gssp1ALoT8cEpJXVCF-z=s360-c-no" alt="SawHtooKaPaw" class="profile-img">
+                <div class="img-overlay"></div>
+            </div>
             <div class="profile-title">
-                <h1>SawHtooKapaw(စဝ်ထ်ုယဝ်အဲ)</h1>
-                <p>တောင်ကလေးဘုန်းတော်ကြီးသင်ပညာရေးကျောင်း | ၁၁တန်းကျောင်းသား</p>
+                <h1>SawHtooKapaw <span class="name-burmese">(စဝ်ထူးကောပေါ်)</span></h1>
+                <p class="subtitle">တောင်ကလေးဘုန်းတော်ကြီးသင်ပညာရေးကျောင်း | ၁၁တန်းကျောင်းသား</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100077345307648&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:sawhtookapaw38@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://t.me/yourprofile" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
             </div>
         </div>
     </header>
 
-    <nav>
+    <nav id="main-nav">
         <div class="container">
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul>
-                <li><a href="#about">ကျွန်တော်အကြောင်း</a></li>
-                <li><a href="#hoppy">ကျွန်တော်ဝါသနာများ</a></li>
-                <li><a href="#dish-detergent">ဆပ်ပြာရည်ပရောဂျက်</a></li>
-                <li><a href="#contact">ဆက်သွယ်ရန်</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> ကျွန်တော်အကြောင်း</a></li>
+                <li><a href="#hoppy" class="nav-link"><i class="fas fa-heart"></i> ကျွန်တော်ဝါသနာများ</a></li>
+                <li><a href="#dish-detergent" class="nav-link"><i class="fas fa-flask"></i> ဆပ်ပြာရည်ပရောဂျက်</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-phone"></i> ဆက်သွယ်ရန်</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="container">
-        <section id="about">
-            <h2>ကျွန်တော်အကြောင်း</h2>
+        <section id="about" class="section">
+            <h2 class="section-title"><span>ကျွန်တော်အကြောင်း</span></h2>
             <div class="content-box">
-                <p>မင်္ဂလာပါ။ ကျွန်တော်က SawHtooKapaw ဖြစ်ပါတယ်။ တောင်ကလေးဘုန်းတော်ကြီးသင်ပညာရေးကျောင်းမှာ ၁၁တန်းကျောင်းသားတစ်ယောက်အနေနဲ့ ပညာဆည်းပူးနေဆဲဖြစ်ပါတယ်။</p>
-                <p>ကျွန်တော်က ဘောလုံးကန်ရတာကို အရမ်းကြိုက်ပါတယ်။ စီးပွားရေးကိုလည်း ဝါသနာပါပြီး လက်ရှိမှာ ဆပ်ပြာရည် (Dish Detergent) ပြုလုပ်နည်းကို လေ့လာသင်ယူနေပါတယ်။ ရောင်းဝယ်ရေးစနစ်ကိုလည်း အရမ်းစိတ်ဝင်စားပါတယ်။</p>
+                <div class="about-content">
+                    <p>မင်္ဂလာပါ။ ကျွန်တော်က SawHtooKapaw ဖြစ်ပါတယ်။ တောင်ကလေးဘုန်းတော်ကြီးသင်ပညာရေးကျောင်းမှာ ၁၁တန်းကျောင်းသားတစ်ယောက်အနေနဲ့ ပညာဆည်းပူးနေဆဲဖြစ်ပါတယ်။</p>
+                    <p>ကျွန်တော်က ဘောလုံးကန်ရတာကို အရမ်းကြိုက်ပါတယ်။ စီးပွားရေးကိုလည်း ဝါသနာပါပြီး လက်ရှိမှာ ဆပ်ပြာရည် (Dish Detergent) ပြုလုပ်နည်းကို လေ့လာသင်ယူနေပါတယ်။ ရောင်းဝယ်ရေးစနစ်ကိုလည်း အရမ်းစိတ်ဝင်စားပါတယ်။</p>
+                </div>
+                <div class="skills">
+                    <h3>ကျွမ်းကျင်မှုများ</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <span class="skill-name">ဆပ်ပြာရည်ထုတ်လုပ်နည်း</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">စီးပွားရေး</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">ဘောလုံးကစားခြင်း</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <section id="hoppy">
-            <h2>ကျွန်တော့်ဝါသနာများ</h2>
-            <div class="content-box">
-                <div class="hobby-item">
-                    <h3>⚽ ဘော်လုံးကန်ခြင်း</h3>
-                    <p>ဘောလုံးကစားရခြင်း ဝါသနာ ဆိုတာက ဘောလုံးကိုချစ်မြတ်နိုးပြီး ကစားရတာ၊ ကြည့်ရတာ၊ လေ့လာရတာကို စိတ်ဝင်စားတဲ့ အချစ်တစ်မျိုးပါ။ ဒီဝါသနာက ကလေးဘဝကတည်းက စတင်လာတတ်ပြီး မိတ်ဆွေတွေနဲ့အတူ ပျော်ရွှင်စွာ ကစားရတာ၊ အားကစားစိတ်ဓာတ်၊ ကျန်းမာရေး၊ အသင်းအဖွဲ့နဲ့ လုပ်ဆောင်တတ်မှု စတဲ့ အကျိုးကျေးဇူးတွေကြောင့် လူငယ်တွေကြားမှာ အထူးခေတ်စားပါတယ်။</p>
-                    <p>ဘောလုံးဝါသနာရှင်တစ်ယောက်အနေနဲ့ မိမိအကြိုက်ဆုံး အသင်း/ကစားသမားတွေကို အားပေးတာ၊ ဘောလုံးပြိုင်ပွဲတွေကို စိတ်လှုပ်ရှားစွာ လိုက်လံကြည့်ရှုတာ၊ ကိုယ်တိုင်လေ့ကျင့်ကစားပြီး ကျွမ်းကျင်မှုတိုးတက်အောင် ကြိုးစားတာတွေ ပါဝင်ပါတယ်။</p>
-                    <p>ဒီဝါသနာက ပျော်ရွှင်မှုပေးရုံသာမက စည်းလုံးမှု၊ ဇွဲလုံ့လနဲ့ အောင်မြင်မှုအတွက် သင်ခန်းစာတွေပါ ပေးစွမ်းနိုင်ပါတယ်။</p>
-                    <p>ဘောလုံးကို ချစ်တဲ့သူတိုင်းအတွက် ဒီဝါသနာက ဘဝရဲ့ အရောင်တစ်ခုပါပဲ လို့ကျွန်တော်ယုံကြည်ပါတယ်။</p>
+        <section id="hoppy" class="section">
+            <h2 class="section-title"><span>ကျွန်တော့်ဝါသနာများ</span></h2>
+            <div class="hobby-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>ဘော်လုံးကန်ခြင်း</h3>
+                    <div class="hobby-content">
+                        <p>ဘောလုံးကစားရခြင်း ဝါသနာက ကျွန်တော့်အတွက် ပျော်ရွှင်မှုနဲ့ ကျန်းမာရေးကို ပေးစွမ်းပါတယ်။ အသင်းအဖွဲ့နဲ့ လုပ်ဆောင်တတ်မှုစွမ်းရည်တွေကို ဖွံ့ဖြိုးစေပါတယ်။</p>
+                        <button class="read-more">ဆက်ဖတ်ရန်</button>
+                    </div>
                 </div>
                 
-                <div class="hobby-item">
-                    <h3>💼 စီးပွားရေးလုပ်ခြင်း</h3>
-                    <p>ဘာကြောင့် စီးပွားရေးကို ဝါသနာပါရတာလဲဆိုတော့</p>
-                    <ul>
-                        <li>လွတ်လပ်မှုကို လိုချင်လို့ – ကိုယ်ပိုင်အချိန်၊ ငွေကြေးနဲ့ ဘဝကို ကိုယ်တိုင်ထိန်းချုပ်ချင်တယ်။</li>
-                        <li>ဖန်တီးလိုစိတ်ရှိလို့ – ကိုယ်တိုင် လုပ်ငန်းတစ်ခုတည်ဆောက်ပြီး လူတွေရဲ့ဘဝကို ပြောင်းလဲပေးနိုင်မယ့် ထုတ်ကုန်တွေ/ဝန်ဆောင်မှုတွေ ဖန်တီးချင်တယ်။</li>
-                        <li>စိန်ခေါ်မှုကို နှစ်သက်လို့ – အောင်မြင်မှုအတွက် ကြိုးစားရတာကို စိတ်လှုပ်ရှားတတ်တယ်။</li>
-                    </ul>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-business-time"></i>
+                    </div>
+                    <h3>စီးပွားရေးလုပ်ခြင်း</h3>
+                    <div class="hobby-content">
+                        <p>စီးပွားရေးလုပ်ငန်းတွေကို လေ့လာခြင်းက ကျွန်တော့်အတွက် ဖန်တီးမှုနဲ့ စီမံခန့်ခွဲမှုစွမ်းရည်တွေကို မြှင့်တင်ပေးပါတယ်။</p>
+                        <button class="read-more">ဆက်ဖတ်ရန်</button>
+                    </div>
                 </div>
                 
-                <div class="hobby-item">
-                    <h3>✈️ လေ့လာရေးခရီးသွားခြင်း</h3>
-                    <p>ဘာကြောင့် ခရီးသွားရတာကို ဝါသနာပါရတာလဲဆိုတော့</p>
-                    <ul>
-                        <li>လွတ်လပ်မှုကို ခံစားရလို့ – လမ်းမှာ မမျှော်လင့်တဲ့ အတွေ့အကြုံတွေက အသက်သွင်းပေးတယ်။</li>
-                        <li>ကိုယ်တိုင် သင်ယူခွင့်ရလို့ – ခရီးတိုင်းက စာမျက်နှာအသစ်တစ်ခုဖွင့်ပေးတယ်။</li>
-                        <li>အနားယူဖို့ထက် စူးစမ်းဖို့ – Resorts ထက် Trekking၊ ဟိုတယ်ထက် Hostel တွေမှာ နေရတာ ပိုကြိုက်တယ်။</li>
-                    </ul>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>လေ့လာရေးခရီးသွားခြင်း</h3>
+                    <div class="hobby-content">
+                        <p>ခရီးသွားခြင်းက ကျွန်တော့်အတွက် လူမှုဆက်ဆံရေးနဲ့ ယဉ်ကျေးမှုအသစ်တွေကို လေ့လာဖို့ အခွင့်အလမ်းဖြစ်စေပါတယ်။</p>
+                        <button class="read-more">ဆက်ဖတ်ရန်</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="dish-detergent">
-            <h2>ဆပ်ပြာရည်ပရောဂျက်</h2>
+        <section id="dish-detergent" class="section">
+            <h2 class="section-title"><span>ဆပ်ပြာရည်ပရောဂျက်</span></h2>
             <div class="content-box">
-                <h3>ဆပ်ပြာရည်ဖော်မြူလာ</h3>
-                <p>ရိုးရှင်းသော အိမ်တွင်းလုပ်ဆပ်ပြာရည်အတွက် အခြေခံဖော်မြူလာ:</p>
+                <div class="project-intro">
+                    <p>အိမ်တွင်းသုံးဆပ်ပြာရည်ထုတ်လုပ်နည်းကို ကျွန်တော်လေ့လာထားသော အခြေခံဖော်မြူလာနှင့် နည်းလမ်းများ</p>
+                </div>
                 
-                <div class="formula">
-                    <p><strong>ပါဝင်ပစ္စည်းများ:</strong></p>
-                    <ul>
-                        <li>SLES (Sodium Lauryl Ether Sulfate) - 30%</li>
-                        <li>ဆားခါး (Sodium Chloride) - 3%</li>
-                        <li>ကိုက် 9.5 (Coconut Diethanolamide) - 5%</li>
-                        <li>ဆီဆိုဒါ (Sodium Hydroxide) - အနည်းငယ် (pH ထိန်းရန်)</li>
-                        <li>ရေ - 61.5%</li>
-                        <li>အနံ့ဆီ (အလိုက်သင့်)</li>
-                        <li>ရောင်ဆိုးဆေး (အလိုက်သင့်)</li>
-                    </ul>
+                <div class="formula-card">
+                    <h3><i class="fas fa-vial"></i> ဆပ်ပြာရည်ဖော်မြူလာ</h3>
+                    <div class="formula-content">
+                        <div class="ingredients">
+                            <h4>ပါဝင်ပစ္စည်းများ:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> SLES (Sodium Lauryl Ether Sulfate) - 30%</li>
+                                <li><i class="fas fa-check-circle"></i> ဆားခါး (Sodium Chloride) - 3%</li>
+                                <li><i class="fas fa-check-circle"></i> ကိုက် 9.5 (Coconut Diethanolamide) - 5%</li>
+                                <li><i class="fas fa-check-circle"></i> ဆီဆိုဒါ (Sodium Hydroxide) - အနည်းငယ်</li>
+                                <li><i class="fas fa-check-circle"></i> ရေ - 61.5%</li>
+                                <li><i class="fas fa-check-circle"></i> အနံ့ဆီ (အလိုက်သင့်)</li>
+                                <li><i class="fas fa-check-circle"></i> ရောင်ဆိုးဆေး (အလိုက်သင့်)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="chemical-equation">
+                            <h4><i class="fas fa-atom"></i> ဓာတုညီမျှခြင်း:</h4>
+                            <div class="equation-box">
+                                <p>C<sub>12</sub>H<sub>25</sub>OSO<sub>3</sub>Na + H<sub>2</sub>O → C<sub>12</sub>H<sub>25</sub>OSO<sub>3</sub><sup>-</sup> + Na<sup>+</sup> + H<sub>2</sub>O</p>
+                                <p class="equation-desc">(Sodium Lauryl Sulfate ရေတွင် ပျော်ဝင်ခြင်း)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="chemical-equation">
-                    <h4>ဓာတုညီမျှခြင်း:</h4>
-                    <p>C<sub>12</sub>H<sub>25</sub>OSO<sub>3</sub>Na + H<sub>2</sub>O → C<sub>12</sub>H<sub>25</sub>OSO<sub>3</sub><sup>-</sup> + Na<sup>+</sup> + H<sub>2</sub>O</p>
-                    <p>(Sodium Lauryl Sulfate ရေတွင် ပျော်ဝင်ခြင်း)</p>
+                <div class="steps-card">
+                    <h3><i class="fas fa-list-ol"></i> ပြုလုပ်နည်းအဆင့်ဆင့်</h3>
+                    <ol class="steps-list">
+                        <li><span>1</span> SLES ကို ရေနှင့်ရောပါ (အပူမပေးရ)</li>
+                        <li><span>2</span> ကိုက် 9.5 ထည့်ပါ</li>
+                        <li><span>3</span> ဆားခါးအနည်းငယ်ထည့်ပြီး သမအောင်မွှေပါ</li>
+                        <li><span>4</span> pH ကို 7-8 အတွင်းရောက်အောင် ဆီဆိုဒါဖြင့်ညှိပါ</li>
+                        <li><span>5</span> အနံ့ဆီနှင့် ရောင်ဆိုးဆေးထည့်ပါ</li>
+                        <li><span>6</span> 24 နာရီခန့် အနားပေးပါ</li>
+                    </ol>
                 </div>
-
-                <h3>ပြုလုပ်နည်းအဆင့်ဆင့်</h3>
-                <ol>
-                    <li>SLES ကို ရေနှင့်ရောပါ (အပူမပေးရ)</li>
-                    <li>ကိုက် 9.5 ထည့်ပါ</li>
-                    <li>ဆားခါးအနည်းငယ်ထည့်ပြီး သမအောင်မွှေပါ</li>
-                    <li>pH ကို 7-8 အတွင်းရောက်အောင် ဆီဆိုဒါဖြင့်ညှိပါ</li>
-                    <li>အနံ့ဆီနှင့် ရောင်ဆိုးဆေးထည့်ပါ</li>
-                    <li>24 နာရီခန့် အနားပေးပါ</li>
-                </ol>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>ဆက်သွယ်ရန်</h2>
-            <div class="content-box">
-                <p>ဖုန်း: 09681595228</p>
-                <p>ကျွန်တော့်နဲ့ဆက်သွယ်လိုပါက အောက်ပါလင့်ခ်များမှတစ်ဆင့် ဆက်သွယ်နိုင်ပါသည်။</p>
-                <div class="contact-links">
-                    <a href="https://www.facebook.com/profile.php?id=100077345307648&mibextid=ZbWKwL" target="_blank" class="social-button">Facebook</a>
-                    <a href="sawhtookapaw38@gmail.com" target="_black" class="social-button">Gmail</a>
-                    <a href="https://t.me/yourprofile" target="_blank" class="social-button">Telegram</a>
+        <section id="contact" class="section">
+            <h2 class="section-title"><span>ဆက်သွယ်ရန်</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ဖုန်း</h3>
+                            <p>09681595228</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>အီးမေးလ်</h3>
+                            <p>sawhtookapaw38@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>တည်နေရာ</h3>
+                            <p>တောင်ကလေးဘုန်းတော်ကြီးသင်ပညာရေးကျောင်း</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>မက်ဆေ့ပို့ရန်</h3>
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="သင့်နာမည်" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="သင့်အီးမေးလ်" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="သင့်မက်ဆေ့ဂျ်" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">ပို့ရန် <i class="fas fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -123,9 +215,36 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 SawHtooKapaw. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>SawHtooKapaw</h3>
+                    <p>11တန်းကျောင်းသား၊ စီးပွားရေးနှင့် ဆပ်ပြာရည်ထုတ်လုပ်မှုကို စိတ်ဝင်စားသူ</p>
+                </div>
+                <div class="footer-links">
+                    <h3>လင့်ခ်များ</h3>
+                    <ul>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> ကျွန်တော်အကြောင်း</a></li>
+                        <li><a href="#hoppy"><i class="fas fa-chevron-right"></i> ကျွန်တော့်ဝါသနာများ</a></li>
+                        <li><a href="#dish-detergent"><i class="fas fa-chevron-right"></i> ဆပ်ပြာရည်ပရောဂျက်</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> ဆက်သွယ်ရန်</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>လူမှုကွန်ရက်</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100077345307648&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:sawhtookapaw38@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://t.me/yourprofile" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year">2024</span> SawHtooKapaw. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <button class="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
 </body>
